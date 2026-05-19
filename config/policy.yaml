@@ -1,0 +1,26 @@
+input:
+  block_topics:
+    - competitors
+    - medical advice
+    - legal advice
+    - Sexual Content
+  block_pii:
+    - CREDIT_CARD
+    - PHONE_NUMBER
+    - EMAIL_ADDRESS
+    - US_SSN
+  max_prompt_length: 2000
+  jailbreak_threshold: 0.7
+
+output:
+  max_response_length: 1000
+  toxicity_threshold: 0.7
+  block_topics:
+    - competitors
+    - medical advice
+    - legal advice
+  require_json: false
+
+retry:
+  max_retries: 2
+  fallback_message: "I'm sorry, I cannot process this request. Please rephrase and try again."
