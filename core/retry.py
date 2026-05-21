@@ -14,7 +14,7 @@ def run_with_guardrails(prompt: str) -> dict:
         return {"success": False, "response": fallback, "reason": input_check["reason"]}
 
     current_prompt = prompt
-    for attempt in range(max_retries + 1):
+    for attempt in range(max_retries + 2):
         response = call_llm(current_prompt)
 
         output_check = validate_output(response)

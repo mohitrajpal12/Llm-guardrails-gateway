@@ -423,3 +423,6 @@ Go to http://localhost:8000/docs
 - **LLM-as-judge pattern** — using Gemini to evaluate Gemini's output is a real industry pattern (Meta does this with LlamaGuard)
 - **Semantic checks beat keyword matching** — "take this medication" is medical advice even if those exact words aren't in your blocklist
 - **Corporate networks block HuggingFace** — always have a fallback that doesn't need model downloads
+
+
+
